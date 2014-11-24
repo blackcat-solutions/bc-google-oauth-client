@@ -18,7 +18,15 @@
 			<artifactId>google-oauth-client</artifactId>
 			<version>1.18.0-rc</version>
 		</dependency>
-    </dependencies>
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>blackcat.releases</id>
+			<name>BlackCat Releases</name>
+			<url>file://../releases</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
@@ -28,6 +36,16 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<!--
+						During release:perform, enable the "release" profile
+					   -->
+					<releaseProfiles>release</releaseProfiles>
 				</configuration>
 			</plugin>
 		</plugins>

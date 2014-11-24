@@ -17,19 +17,17 @@
  */
 package com.blackcat.oauth;
 
-import com.google.api.client.auth.oauth.*;
-
 public class OAuthGetAccessToken extends AbstractOAuthGetToken {
 
 	/**
 	 * Required temporary token. It is retrieved from the {@link com.google.api.client.auth.oauth.OAuthCredentialsResponse#token}
-	 * returned from {@link OAuthGetTemporaryToken#execute()}.
+	 * returned from {@link com.google.api.client.auth.oauth.OAuthGetTemporaryToken#execute()}.
 	 */
 	public String temporaryToken;
 
 	/**
 	 * Required verifier code received from the server when the temporary token was authorized. It is
-	 * retrieved from {@link OAuthCallbackUrl#verifier}.
+	 * retrieved from {@link com.google.api.client.auth.oauth.OAuthCallbackUrl#verifier}.
 	 */
 	public String verifier;
 

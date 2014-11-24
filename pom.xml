@@ -7,6 +7,9 @@
 	<groupId>com.blackcat</groupId>
 	<artifactId>google-oauth-client</artifactId>
 	<version>1.18.0-rc</version>
+	<scm>
+		<connection>git@github.com:blackcat-solutions/bc-google-oauth-client.git</connection>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -27,7 +27,7 @@
 		<repository>
 			<id>blackcat.releases</id>
 			<name>BlackCat Releases</name>
-			<url>file:///Users/simon/workspaces/blackcat/releases</url>
+			<url>file://${project.basedir}/releases</url>
 		</repository>
 	</distributionManagement>
 
